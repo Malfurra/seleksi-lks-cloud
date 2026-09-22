@@ -1,7 +1,7 @@
 #!/bin/bash
 set -uo pipefail
 
-PREFIX="budi"
+PREFIX="yasin"
 
 echo "==================================================="
 echo " VERIFIKASI INFRASTRUKTUR AWS - MATERI 1-7"
