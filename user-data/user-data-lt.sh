@@ -35,7 +35,8 @@ cat > /opt/scripts/upload_log.sh << 'EOF'
 #!/bin/bash
 set -euo pipefail
 
-BUCKET="CHANGE_ME_S3_BUCKET"
+BUCKET="
+yasin-logs-1234"
 PREFIX="logs"
 LOG_FILE="/home/ec2-user/app-logs/access.log"
 
@@ -86,10 +87,10 @@ else
   docker run -d \
     --name "${CONTAINER_NAME}" \
     --restart unless-stopped \
-    -e DB_HOST=CHANGE_ME_DB_HOST \
-    -e DB_USER=CHANGE_ME_DB_USER \
-    -e DB_PASS='CHANGE_ME_DB_PASSWORD' \
-    -e DB_NAME=CHANGE_ME_DB_NAME \
+    -e DB_HOST=yasin-db.cxysnxbk8snd.us-east-1.rds.amazonaws.com \
+    -e DB_USER=admin \
+    -e DB_PASS='admin123' \
+    -e DB_NAME=yasin-db \
     -p 5000:5000 \
     -v /home/ec2-user/app-logs:/var/log/app \
     ghcr.io/CHANGE_ME_OWNER/CHANGE_ME_REPOSITORY:CHANGE_ME_TAG
