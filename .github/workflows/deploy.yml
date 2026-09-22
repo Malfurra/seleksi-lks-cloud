@@ -1,0 +1,15 @@
+name: ghcr
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  ghcr:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: ghcr
+        uses: KuhlTime/ghcr-action@v2
