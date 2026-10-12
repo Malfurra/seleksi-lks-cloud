@@ -1,6 +1,6 @@
 #!/bin/bash
 PREFIX="lutvi"                          # prefix identitas siswa
-GHCR_OWNER="sucode-team"                   # username GitHub siswa (wajib lowercase untuk docker)
+GHCR_OWNER="malfurra"                   # username GitHub siswa (wajib lowercase untuk docker)
 GHCR_IMAGE="ghcr.io/${GHCR_OWNER}/seleksi-lks-cloud"
 ALB_NAME="${PREFIX}-alb"               # nama ALB dari materi 3
 
