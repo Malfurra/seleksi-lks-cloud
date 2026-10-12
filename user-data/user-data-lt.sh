@@ -37,7 +37,7 @@ cat > /opt/scripts/upload_log.sh << 'EOF'
 #!/bin/bash
 set -euo pipefail
 
-BUCKET="lutvi-logs-2026"
+BUCKET="lutvi-logs-2027"
 PREFIX="logs"
 LOG_FILE="/home/ec2-user/app-logs/access.log"
 
