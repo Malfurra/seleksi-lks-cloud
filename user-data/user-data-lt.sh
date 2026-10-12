@@ -94,13 +94,13 @@ else
   docker run -d \
     --name "${CONTAINER_NAME}" \
     --restart unless-stopped \
-    -e DB_HOST=lutvi-db.cb8rnf5gimmg.us-east-1.rds.amazonaws.com \
+    -e DB_HOST=lutvi-db.ccnath4tv1jh.us-east-1.rds.amazonaws.com \
     -e DB_USER=admin \
     -e DB_PASS='Admin1234' \
     -e DB_NAME=training_db \
     -p 5000:5000 \
     -v /home/ec2-user/app-logs:/var/log/app \
-    ghcr.io/epithap/seleksi-lks-cloud:latest
+    ghcr.io/malfurra/seleksi-lks-cloud:latest
 fi
 
 echo "=== Jalankan upload_log.sh sekali di awal (jaga-jaga) ==="
