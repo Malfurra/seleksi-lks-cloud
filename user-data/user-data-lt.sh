@@ -96,7 +96,7 @@ else
     --restart unless-stopped \
     -e DB_HOST=lutvi-db.cb8rnf5gimmg.us-east-1.rds.amazonaws.com \
     -e DB_USER=admin \
-    -e DB_PASS='LutviPassword123!' \
+    -e DB_PASS='Admin1234' \
     -e DB_NAME=training_db \
     -p 5000:5000 \
     -v /home/ec2-user/app-logs:/var/log/app \
