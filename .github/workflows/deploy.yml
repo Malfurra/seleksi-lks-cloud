@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write   # <--- PASTIKAN BARIS INI ADA DI DALAM BLOK PERMISSIONS
+      packages: write   
 
     steps:
       - name: Checkout repository
