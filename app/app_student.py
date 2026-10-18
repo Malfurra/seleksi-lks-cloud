@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # ---------------------------------------------------------
 # Konfigurasi koneksi database diambil dari Environment Variable
-# supaya credential TIDAK di-hardcode di kode.
+# supaya credential TIDAK di-hardcode di kode
 # Isi variabel ini nanti lewat EC2 user-data / systemd service file.
 # ---------------------------------------------------------
 DB_HOST = os.environ.get("DB_HOST")
